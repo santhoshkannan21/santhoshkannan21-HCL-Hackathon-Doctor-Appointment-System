@@ -1,0 +1,44 @@
+﻿@inherits LayoutComponentBase
+@using DoctorAppointmentSystem.UI.Services.Interfaces
+@inject IAuthClientService AuthService
+@inject NavigationManager Nav
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4 d-flex justify-content-end align-items-center">
+            @* 🚨 FIX: Explicit context name to stop RZ9999 error *@
+            <AuthorizeView Context="headerContext">
+                <Authorized>
+                    <div class="d-flex align-items-center">
+                        <span class="me-3">
+                            Welcome, <strong>@headerContext.User.Identity?.Name</strong>
+                        </span>
+                        <button class="btn btn-sm btn-danger" @onclick="HandleLogout">Logout</button>
+                    </div>
+                </Authorized>
+                <NotAuthorized>
+                    <div class="d-flex gap-2">
+                        <a href="login" class="btn btn-sm btn-primary">Login</a>
+                        <a href="register" class="btn btn-sm btn-outline-secondary">Join</a>
+                    </div>
+                </NotAuthorized>
+            </AuthorizeView>
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    private async Task HandleLogout()
+    {
+        await AuthService.LogoutAsync();
+        Nav.NavigateTo("/", forceLoad: true);
+    }
+}

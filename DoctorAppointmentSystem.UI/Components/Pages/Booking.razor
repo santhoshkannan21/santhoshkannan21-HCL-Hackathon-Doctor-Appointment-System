@@ -1,0 +1,62 @@
+﻿@page "/booking/{DoctorId:int}/{DoctorName}"
+@using DoctorAppointmentSystem.Shared.DTOs.Request
+@using DoctorAppointmentSystem.Shared.Enums
+@using DoctorAppointmentSystem.UI.Services.Interfaces
+@inject IDoctorClientService DoctorService
+@inject IAppointmentClientService AppointmentService
+@inject NavigationManager Nav
+
+<div class="container mt-4">
+    <h3>Book Appointment with @DoctorName</h3>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <label class="form-label">Select Date</label>
+            <input type="date" class="form-control" @onchange="OnDateChanged" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+            
+            <h5 class="mt-4">Available Slots</h5>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+                @foreach (var slot in availableSlots)
+                {
+                    <button class="btn @(selectedSlot == slot ? "btn-primary" : "btn-outline-primary")"
+                            @onclick="() => selectedSlot = slot">
+                        @slot.ToString().Replace("SLOT_", "").Replace("_", " ")
+                    </button>
+                }
+            </div>
+            
+            <button class="btn btn-success mt-5 w-100" @onclick="ConfirmBooking"
+                    disabled="@(selectedSlot == null)">
+                Confirm Booking
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public int DoctorId { get; set; }
+    [Parameter] public string DoctorName { get; set; } = "";
+    
+    private List<TimeSlot> availableSlots = new();
+    private DateTime selectedDate = DateTime.Now;
+    private TimeSlot? selectedSlot;
+
+    private async Task OnDateChanged(ChangeEventArgs e)
+    {
+        selectedDate = DateTime.Parse(e.Value!.ToString()!);
+        var req = new GetAvailableSlotRequestDto { DoctorId = DoctorId, Date = selectedDate };
+        availableSlots = (await DoctorService.GetAvailableSlotsAsync(req)).ToList();
+    }
+
+    private async Task ConfirmBooking()
+    {
+        var req = new BookAppointmentRequestDto
+        {
+            DoctorId = DoctorId,
+            AppointmentDate = selectedDate,
+            TimeSlot = selectedSlot!.Value
+        };
+        await AppointmentService.BookAppointmentAsync(req);
+        Nav.NavigateTo("/my-appointments");
+    }
+}

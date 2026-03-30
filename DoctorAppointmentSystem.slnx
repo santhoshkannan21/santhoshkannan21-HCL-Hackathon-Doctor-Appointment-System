@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="DoctorAppointmentSystem.API/DoctorAppointmentSystem.API.csproj" />
+  <Project Path="DoctorAppointmentSystem.Shared/DoctorAppointmentSystem.Shared.csproj" />
+  <Project Path="DoctorAppointmentSystem.UI/DoctorAppointmentSystem.UI.csproj" Id="c04a3c34-d791-4ec8-939e-31f0fee4bf8e" />
+</Solution>

@@ -1,0 +1,35 @@
+﻿@page "/admin-dashboard"
+@attribute [Authorize(Roles = "Admin")]
+@using DoctorAppointmentSystem.Shared.DTOs.Request
+@using DoctorAppointmentSystem.Shared.DTOs.Response
+@using DoctorAppointmentSystem.UI.Services.Interfaces
+@using Microsoft.AspNetCore.Authorization
+@inject IAdminClientService AdminService
+
+<div class="container mt-4">
+    <h2>Admin Dashboard - Daily Summary</h2>
+    <div class="row mb-4 mt-3">
+        <div class="col-md-4">
+            <input type="date" class="form-control" @bind="selectedDate" />
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-dark w-100" @onclick="LoadSummary">View Report</button>
+        </div>
+    </div>
+
+    @if (summary != null)
+    {
+        <div class="row text-center">
+            <div class="col-md-3"><div class="card p-3 bg-primary text-white"><h5>Total Appts</h5><h3>@summary.TotalAppointments</h3></div></div>
+            <div class="col-md-3"><div class="card p-3 bg-success text-white"><h5>Total Revenue</h5><h3>₹@summary.TotalRevenue</h3></div></div>
+            <div class="col-md-3"><div class="card p-3 bg-info text-white"><h5>Online</h5><h3>@summary.OnlineCount</h3></div></div>
+            <div class="col-md-3"><div class="card p-3 bg-warning text-dark"><h5>Offline</h5><h3>@summary.OfflineCount</h3></div></div>
+        </div>
+    }
+</div>
+
+@code {
+    private DateTime selectedDate = DateTime.Now;
+    private DailySummaryResponseDto? summary;
+    private async Task LoadSummary() => summary = await AdminService.GetDailySummaryAsync(new DailySummaryFilterDto { Date = selectedDate });
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

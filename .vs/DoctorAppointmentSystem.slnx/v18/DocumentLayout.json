@@ -1,0 +1,394 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Web Project\\DoctorAppointmentSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\components\\pages\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\components\\pages\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\components\\pages\\booking.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\components\\pages\\booking.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\components\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\components\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\components\\pages\\myappointments.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\components\\pages\\myappointments.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\services\\implementations\\appointmentclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\services\\implementations\\appointmentclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\services\\implementations\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\services\\implementations\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\helpers\\authhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\helpers\\authhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D3194C-2C5A-5881-629B-BC04F349CE2E}|DoctorAppointmentSystem.Shared\\DoctorAppointmentSystem.Shared.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.shared\\enums\\consultationmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D3194C-2C5A-5881-629B-BC04F349CE2E}|DoctorAppointmentSystem.Shared\\DoctorAppointmentSystem.Shared.csproj|solutionrelative:doctorappointmentsystem.shared\\enums\\consultationmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\entities\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D3194C-2C5A-5881-629B-BC04F349CE2E}|DoctorAppointmentSystem.Shared\\DoctorAppointmentSystem.Shared.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.shared\\dtos\\request\\doctorsearchfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D3194C-2C5A-5881-629B-BC04F349CE2E}|DoctorAppointmentSystem.Shared\\DoctorAppointmentSystem.Shared.csproj|solutionrelative:doctorappointmentsystem.shared\\dtos\\request\\doctorsearchfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.api\\services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C08D290-D20B-7144-DABD-CD698FF1963E}|DoctorAppointmentSystem.API\\DoctorAppointmentSystem.API.csproj|solutionrelative:doctorappointmentsystem.api\\services\\interfaces\\idoctorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|d:\\web project\\doctorappointmentsystem\\doctorappointmentsystem.ui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C04A3C34-D791-4EC8-939E-31F0FEE4BF8E}|DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj|solutionrelative:doctorappointmentsystem.ui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 18,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppointmentClientService.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Services\\Implementations\\AppointmentClientService.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Services\\Implementations\\AppointmentClientService.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Services\\Implementations\\AppointmentClientService.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Services\\Implementations\\AppointmentClientService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwCUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T13:13:09.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthHelper.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Helpers\\AuthHelper.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\Helpers\\AuthHelper.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Helpers\\AuthHelper.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\Helpers\\AuthHelper.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:42:27.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Services\\Implementations\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\Services\\Implementations\\AppointmentService.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Services\\Implementations\\AppointmentService.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\Services\\Implementations\\AppointmentService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwBwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:38:05.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppointmentsController.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Controllers\\AppointmentsController.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\Controllers\\AppointmentsController.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Controllers\\AppointmentsController.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\Controllers\\AppointmentsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T12:35:16.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\appsettings.json",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\appsettings.json",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\appsettings.json",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-30T12:27:29.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T11:50:29.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T11:48:36.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ConsultationMode.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Shared\\Enums\\ConsultationMode.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.Shared\\Enums\\ConsultationMode.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Shared\\Enums\\ConsultationMode.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.Shared\\Enums\\ConsultationMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T11:09:48.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T10:59:28.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Program.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Program.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Program.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T10:56:03.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\Program.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Program.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwFEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T10:55:08.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Entities\\Doctor.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\Entities\\Doctor.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Entities\\Doctor.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\Entities\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T10:53:19.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DoctorSearchFilterDto.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Shared\\DTOs\\Request\\DoctorSearchFilterDto.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.Shared\\DTOs\\Request\\DoctorSearchFilterDto.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.Shared\\DTOs\\Request\\DoctorSearchFilterDto.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.Shared\\DTOs\\Request\\DoctorSearchFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T10:51:52.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IDoctorService.cs",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Services\\Interfaces\\IDoctorService.cs",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.API\\Services\\Interfaces\\IDoctorService.cs",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.API\\Services\\Interfaces\\IDoctorService.cs",
+              "RelativeToolTip": "DoctorAppointmentSystem.API\\Services\\Interfaces\\IDoctorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T10:52:14.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.razor",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\Register.razor",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Components\\Pages\\Register.razor",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\Register.razor",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Components\\Pages\\Register.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T10:40:46.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyAppointments.razor",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\MyAppointments.razor",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Components\\Pages\\MyAppointments.razor",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\MyAppointments.razor",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Components\\Pages\\MyAppointments.razor",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAswH8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T10:40:43.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.razor",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Components\\Pages\\Login.razor",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\Login.razor",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Components\\Pages\\Login.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T10:40:37.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Booking.razor",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\Booking.razor",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Components\\Pages\\Booking.razor",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\Booking.razor",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Components\\Pages\\Booking.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T10:40:30.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminDashboard.razor",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\AdminDashboard.razor",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Components\\Pages\\AdminDashboard.razor",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\AdminDashboard.razor",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Components\\Pages\\AdminDashboard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T10:40:28.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\App.razor",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Components\\App.razor",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\App.razor",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Components\\App.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T10:39:50.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T10:38:35.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "DoctorAppointmentSystem.UI\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "DoctorAppointmentSystem.UI\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T10:37:24.843Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

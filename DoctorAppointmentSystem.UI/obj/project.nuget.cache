@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UzedD8yQDaI=",
+  "success": true,
+  "projectFilePath": "D:\\Web Project\\DoctorAppointmentSystem\\DoctorAppointmentSystem.UI\\DoctorAppointmentSystem.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\santh\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.5\\microsoft.aspnetcore.app.internal.assets.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,122 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@using DoctorAppointmentSystem.Shared.DTOs.Request
+@using DoctorAppointmentSystem.Shared.DTOs.Response
+@using DoctorAppointmentSystem.Shared.Enums
+@using DoctorAppointmentSystem.UI.Services.Interfaces
+@inject IDoctorClientService DoctorService
+@inject NavigationManager Nav
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary"><i class="bi bi-search"></i> Find a Doctor</h2>
+        @if (isSearching) {
+            <div class="spinner-border spinner-border-sm text-primary" role="status"></div>
+        }
+    </div>
+
+    @* --- Filter Section --- *@
+    <div class="row g-3 p-4 bg-white shadow-sm rounded border mb-4">
+        <div class="col-md-4">
+            <label class="form-label fw-bold">Specialty</label>
+            <select class="form-select" @bind="filter.SpecialtyId">
+                <option value="1">General Physician</option>
+                <option value="2">Pediatrics</option>
+                <option value="3">Dermatology</option>
+                <option value="4">Gynecology</option>
+                <option value="5">Orthopedics</option>
+                <option value="6">Cardiology</option> @* Dr. John Smith is here *@
+                <option value="7">Neurology</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label fw-bold">Consultation Mode</label>
+            <select class="form-select" @bind="filter.Mode">
+                <option value="@ConsultationMode.Online">Online</option>
+                <option value="@ConsultationMode.Offline">Offline</option>
+            </select>
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
+            <button type="button" class="btn btn-primary w-100 py-2 shadow-sm" @onclick="HandleSearch" disabled="@isSearching">
+                <i class="bi bi-funnel-fill"></i> Search Doctors
+            </button>
+        </div>
+    </div>
+
+    @* --- Results Section --- *@
+    <div class="row">
+        @if (doctors != null && doctors.Any())
+        {
+            @foreach (var doc in doctors)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 border-top border-primary border-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">@doc.FullName</h5>
+                            <span class="badge bg-soft-info text-primary mb-2">@doc.SpecialtyName</span>
+                            <p class="card-text mb-1">
+                                <i class="bi bi-camera-video me-2"></i><strong>@doc.Mode</strong>
+                            </p>
+                            <p class="card-text text-success fw-bold fs-5">₹@doc.ConsultationFee</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <button class="btn btn-outline-success w-100" 
+                                    @onclick='() => Nav.NavigateTo($"/booking/{doc.Id}/{doc.FullName}")'>
+                                Book Appointment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else if (!isSearching)
+        {
+            <div class="col-12">
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    <div>No doctors found. Try searching for <strong>Cardiology + Online</strong> to see Dr. John Smith!</div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .bg-soft-info { background-color: #e0f2fe; }
+    .card { transition: transform 0.2s; }
+    .card:hover { transform: translateY(-5px); }
+</style>
+
+@code {
+    // 🚨 Defaulting to Cardiology (6) + Online to match Seed Data
+    private DoctorSearchFilterDto filter = new() { SpecialtyId = 6, Mode = ConsultationMode.Online };
+    private List<DoctorResponseDto> doctors = new();
+    private bool isSearching = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await HandleSearch(); // Load default results on page load
+    }
+
+    private async Task HandleSearch()
+    {
+        isSearching = true;
+        StateHasChanged();
+
+        try 
+        {
+            var result = await DoctorService.SearchDoctorsAsync(filter);
+            doctors = result?.ToList() ?? new List<DoctorResponseDto>();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Search Error: {ex.Message}");
+            doctors = new List<DoctorResponseDto>();
+        }
+        finally 
+        {
+            isSearching = false;
+            StateHasChanged();
+        }
+    }
+}

@@ -1,0 +1,51 @@
+﻿@page "/register"
+@using DoctorAppointmentSystem.Shared.DTOs.Request
+@using DoctorAppointmentSystem.Shared.Enums
+@using DoctorAppointmentSystem.UI.Services.Interfaces
+@inject IAuthClientService AuthService
+@inject NavigationManager Nav
+
+<div class="container mt-md-5">
+    <div class="row justify-content-center">
+        <div class="col-md-3 card p-2 shadow border-0">
+            <h3 class="text-center mb-5 text-success">Create Account</h3>
+            
+            <EditForm Model="regModel" OnValidSubmit="HandleRegister" FormName="RegisterForm">
+                <DataAnnotationsValidator />
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <InputText @bind-Value="regModel.FullName" class="form-control" placeholder="John Doe" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email Address</label>
+                    <InputText @bind-Value="regModel.Email" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <InputText @bind-Value="regModel.Password" type="password" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">I am a...</label>
+                    <InputSelect @bind-Value="regModel.Role" class="form-select">
+                        <option value="@UserRole.Patient">Patient</option>
+                        <option value="@UserRole.Doctor">Doctor</option>
+                    </InputSelect>
+                </div>
+                <button type="submit" class="btn btn-success w-100 mt-2 shadow-sm">Join the Platform</button>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@code {
+    [SupplyParameterFromForm]
+    private RegisterRequestDto regModel { get; set; } = new() { Role = UserRole.Patient };
+
+    private async Task HandleRegister()
+    {
+        if (await AuthService.RegisterAsync(regModel))
+        {
+            Nav.NavigateTo("/login");
+        }
+    }
+}

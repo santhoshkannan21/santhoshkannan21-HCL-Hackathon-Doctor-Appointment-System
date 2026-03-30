@@ -1,0 +1,128 @@
+﻿@page "/my-appointments"
+@attribute [Authorize]
+@using DoctorAppointmentSystem.Shared.DTOs.Response
+@using DoctorAppointmentSystem.Shared.Enums
+@using DoctorAppointmentSystem.UI.Services.Interfaces
+@using Microsoft.AspNetCore.Authorization
+@inject IAppointmentClientService ApptService
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>My Appointments</h2>
+        <button class="btn btn-outline-primary btn-sm" @onclick="LoadAppointments">Refresh List</button>
+    </div>
+
+    @if (error != null)
+    {
+        <div class="alert alert-danger">@error <button class="btn btn-link" @onclick="LoadAppointments">Try Again</button></div>
+    }
+    else if (appointments == null)
+    {
+        <p><em>Loading your appointments...</em></p>
+    }
+    else if (!appointments.Any())
+    {
+        <div class="alert alert-info">No appointments found. <a href="/">Book one now!</a></div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover border">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Doctor / Patient</th>
+                        <th>Details</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var appt in appointments)
+                    {
+                        <tr>
+                            <td>
+                                @appt.AppointmentDate.ToShortDateString() <br />
+                                <small class="text-muted">@appt.TimeSlot.ToString().Replace("SLOT_", "").Replace("_", " ")</small>
+                            </td>
+                            <td><b>@appt.DoctorName</b> <br /> <small>@appt.SpecialtyName</small></td>
+                            <td>
+                                <span class="badge bg-secondary">₹@appt.TotalAmount</span><br />
+                                <small class="text-info">@appt.ModeArtifact</small>
+                            </td>
+                            <td>
+                                <span class="badge @GetStatusClass(appt.Status)">@appt.Status</span>
+                            </td>
+                            <td>
+                                @if (appt.Status == AppointmentStatus.Booked)
+                                {
+                                    <button class="btn btn-danger btn-sm" @onclick="() => Cancel(appt.Id)">Cancel</button>
+                                    
+                                    <AuthorizeView Roles="Doctor,Admin">
+                                        <button class="btn btn-success btn-sm ms-2" @onclick="() => Update(appt.Id, AppointmentStatus.Completed)">Complete</button>
+                                    </AuthorizeView>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private List<AppointmentResponseDto>? appointments;
+    private string? error;
+
+    protected override async Task OnInitializedAsync() => await LoadAppointments();
+
+    private async Task LoadAppointments()
+    {
+        try
+        {
+            error = null;
+            appointments = null;
+
+            // Since you don't have a 'List' method, we have to call a single ID
+            // or an endpoint that returns a list.
+            // If your API has a general 'api/appointments' GET, use that.
+            // For now, I will use a placeholder or the ID-based one if you have a specific ID.
+            
+            var result = await ApptService.GetAppointmentByIdAsync(1); // Example ID 1
+            
+            if (result != null && result.Id != 0)
+            {
+                appointments = new List<AppointmentResponseDto> { result };
+            }
+            else
+            {
+                appointments = new List<AppointmentResponseDto>();
+            }
+        }
+        catch (Exception ex)
+        {
+            error = "Could not connect to the server. Please ensure the API is running.";
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    private async Task Cancel(int id)
+    {
+        if (await ApptService.CancelAppointmentAsync(id)) await LoadAppointments();
+    }
+
+    private async Task Update(int id, AppointmentStatus status)
+    {
+        var req = new DoctorAppointmentSystem.Shared.DTOs.Request.UpdateStatusRequestDto { NewStatus = status };
+        if (await ApptService.UpdateStatusAsync(id, req)) await LoadAppointments();
+    }
+
+    private string GetStatusClass(AppointmentStatus status) => status switch
+    {
+        AppointmentStatus.Booked => "bg-primary",
+        AppointmentStatus.Completed => "bg-success",
+        AppointmentStatus.Cancelled => "bg-danger",
+        _ => "bg-secondary"
+    };
+}

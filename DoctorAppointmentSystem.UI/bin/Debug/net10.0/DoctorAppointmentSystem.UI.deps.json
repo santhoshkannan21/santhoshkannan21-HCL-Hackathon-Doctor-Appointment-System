@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "DoctorAppointmentSystem.UI/1.0.0": {
+        "dependencies": {
+          "DoctorAppointmentSystem.Shared": "1.0.0"
+        },
+        "runtime": {
+          "DoctorAppointmentSystem.UI.dll": {}
+        }
+      },
+      "DoctorAppointmentSystem.Shared/1.0.0": {
+        "runtime": {
+          "DoctorAppointmentSystem.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DoctorAppointmentSystem.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DoctorAppointmentSystem.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
