@@ -1,5 +1,4 @@
-# DoctorAppointmentSystem
-# 🏢 Workspace Allocation System | HCL Hackathon 2026
+# DoctorAppointmentSystem | HCL Hackathon 2026
 
 ## 🚀 Overview
 This project is a high-performance Workspace Allocation and Booking System built during the HCL Hackathon (Mar 30, 2026). It ensures strict concurrency control to prevent double-booking of resources, providing a seamless experience for both Employees and Administrators.
@@ -9,7 +8,7 @@ This project is a high-performance Workspace Allocation and Booking System built
 * **Frontend:** Blazor Web App (Interactive Server Mode)
 * **Database:** Entity Framework Core (InMemory Provider for rapid prototyping)
 * **Security:** JWT (JSON Web Tokens) & BCrypt Password Hashing
-* **Testing:** xUnit & FluentAssertions, Postman API Validation
+* **Testing:** Postman API Validation
 
 ## 🏗️ Architectural Highlights
 * **Clean Architecture:** Strict separation of concerns (Controllers -> Services -> Repositories/DbContext).
